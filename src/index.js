@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './containers/App';
 import reportWebVitals from './reportWebVitals';
+import 'tachyons';
+import './containers/App.css';
 
+// Note: All stylng done with tachyons library
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App className='tc'/>
   </React.StrictMode>,
   document.getElementById('root')
 );
